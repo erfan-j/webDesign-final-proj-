@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>طراحی وب</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <h1 class="logo">رسپینا</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="main.html" class="nav-link">صفحه اصلی</a></li>
+            <li><a href="train.html" class="nav-link">بلیط قطار</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <h2 class="hero-title">رسپینا</h2>
+        <div class="hero-container">
+          <button id="showFeatures" class="btn" onclick="showFeatures()">
+            <p>نشان دادن ویژگی های ما</p>
+          </button>
+          <button class="btn" id="hideFeatures" onclick="hideFeatures()">
+            <p>حذف ویژگی های ما</p>
+          </button>
+          <button id="changeBgColor" class="btn" onclick="changeBg()">
+            <p>تغییر رنگ پس زمینه</p>
+          </button>
+          <button id="changeFontWeight" class="btn" onclick="changeFontSize()">
+            <p>تغییر سایز متن ویژگی های ما</p>
+          </button>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2 id="hero-title" class="section-title">ویژگی های ما</h2>
+        <div class="feature-list">
+          <div id="onlineReserve" class="feature-item">
+            <input class="normal-text" value="رزرو آنلاین" />
+            <button class="btn btn-secondary" onclick="addInput()">
+              اضافه کردن اینپوت
+            </button>
+          </div>
+          <div id="priceInsurance" class="feature-item">
+            <input class="normal-text" value="تضمین قیمت" />
+            <button class="btn btn-secondary" onclick="removeInput()">
+              حذف اینپوت
+            </button>
+          </div>
+          <div class="feature-item">
+            <input id="supprot" class="normal-text" value="پشتیبانی 24 ساعته" />
+            <button class="btn btn-secondary" onclick="changeValue()">
+              تغییر متن اینپوت
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Respina24. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
